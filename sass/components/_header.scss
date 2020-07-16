@@ -1,0 +1,117 @@
+.page-header .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+/* LOGO */
+.page-header .logo {
+  margin-right: 85px;
+}
+
+.page-header .logo-blue {
+  font-family: $logo-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}
+.page-header .logo-black {
+  font-family: $logo-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+/* NAVIGATION HEADER*/
+.site-nav {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-family;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $text-font-size;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  .link {
+    color: $title-color;
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    transition: color $animation-effect;
+  }
+  .link:hover,
+  .link:focus {
+    color: $accent-color;
+  }
+  .link.current {
+    position: relative;
+  }
+  .link.current::after {
+    position: absolute;
+    background-color: $accent-color;
+    border-radius: 2px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+  }
+  li {
+    margin-right: 50px;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+}
+/* ADDRESS HEADER */
+.address {
+  margin-left: auto;
+}
+.address-header {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  li {
+    margin-right: 30px;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+  .e-mail,
+  .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family;
+    list-style-type: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $text-font-size;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $text-color;
+
+    transition: color $animation-effect;
+  }
+  a:hover,
+  a:focus {
+    color: $accent-color;
+  }
+}
+.icon-address-header {
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-right: 10px;
+}

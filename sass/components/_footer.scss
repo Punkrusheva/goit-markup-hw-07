@@ -1,0 +1,220 @@
+/* FOOTER */
+.footer {
+  background-color: $footer-bg-color;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+  .card {
+    flex-direction: column;
+  }
+}
+/* LOGO FOOTER*/
+
+.logo-footer {
+  margin-bottom: 20px;
+
+  .logo-blue {
+    font-family: $logo-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: $accent-color;
+  }
+  .logo-white {
+    font-family: $logo-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: $light-color;
+  }
+}
+/* ADDRESS FOOTER */
+
+.address-footer {
+  margin: 0px;
+  width: 231px;
+  margin-right: 69px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $text-font-size;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  color: $light-color;
+
+  ul,
+  li {
+    padding-left: 0px;
+    margin: 0px;
+  }
+  li {
+    margin-bottom: 9px;
+  }
+  li:last-child {
+    margin-bottom: 0px;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color $animation-effect;
+  }
+  a:hover,
+  a:focus {
+    color: $accent-color;
+  }
+}
+/* SOCIAL */
+.social {
+  margin-right: 94px;
+  width: 206px;
+
+  b {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $text-font-size;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light-color;
+  }
+  a {
+    color: $light-color;
+    line-height: 0.7;
+
+    transition: background-color $animation-effect;
+  }
+  a:hover,
+  a:focus {
+    background-color: $accent-color;
+  }
+  .social-list {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-size: auto;
+    transition: background-color $animation-effect;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+  li:hover,
+  li:focus {
+    background-color: $accent-color;
+  }
+  .icon-soc {
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}
+/* SUBSCRIBE */
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+
+  label {
+    margin-bottom: 20px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $text-font-size;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light-color;
+  }
+
+  [type="email"] {
+    padding-left: 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $text-color;
+    background-color: $footer-bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      opacity: 1;
+      transition: opacity$animation-effect;
+    }
+    &::-moz-placeholder {
+      opacity: 1;
+      transition: opacity $animation-effect;
+    }
+    &:-moz-placeholder {
+      opacity: 1;
+      transition: opacity $animation-effect;
+    }
+    &:-ms-input-placeholder {
+      opacity: 1;
+      transition: opacity $animation-effect;
+    }
+    &:focus::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity $animation-effect;
+    }
+    &:focus::-moz-placeholder {
+      opacity: 0;
+      transition: opacity $animation-effect;
+    }
+    &:focus:-moz-placeholder {
+      opacity: 0;
+      transition: opacity $animation-effect;
+    }
+    &:focus:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity $animation-effect;
+    }
+  }
+  .icon-send {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+}
