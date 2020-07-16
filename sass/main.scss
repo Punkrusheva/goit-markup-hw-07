@@ -1,12 +1,17 @@
-// Variables
-@import "./utils/variables";
-
 // Utils
 @import "./utils/normalize";
+
+// Variables
+@import "./utils/variables";
+@import "./utils/styles";
 
 // Components
 @import "./components/header";
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/portfolio";
-@import "./components/main-studio";
+@import "./components/main-hero";
+@import "./components/main-team";
+@import "./components/main-customers";
+@import "./components/main-directions";
+@import "./components/main-advantages";

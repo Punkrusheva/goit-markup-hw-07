@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*  
-  акцентный цвет: #2196f3;
-  цвет заголовка: #212121;
-  цвет текста: #757575;
-  светлый цвет тескта: #ffffff;
-  основной шрифт: "Roboto", sans-serif;
-  шрифт в лого: "Raleway", sans-serif;
-  размер шрифта заголовка: 36px;
-  размер основного текста: 14px;
-  основной цвет фона: #FFFFFF;
-  дополнительный цвет фона: #F5F4FA;
-  цвет фона футера: #2F303A;
-  эффект перехода: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  */
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -270,6 +256,20 @@ summary {
   display: list-item;
 }
 
+/*  
+  акцентный цвет: #2196f3;
+  цвет заголовка: #212121;
+  цвет текста: #757575;
+  светлый цвет тескта: #ffffff;
+  основной шрифт: "Roboto", sans-serif;
+  шрифт в лого: "Raleway", sans-serif;
+  размер шрифта заголовка: 36px;
+  размер основного текста: 14px;
+  основной цвет фона: #FFFFFF;
+  дополнительный цвет фона: #F5F4FA;
+  цвет фона футера: #2F303A;
+  эффект перехода: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  */
 /* My NORMALIZES */
 html {
   -webkit-box-sizing: border-box;
@@ -834,6 +834,7 @@ a {
 }
 
 .modal h1 {
+  visibility: visible;
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -1029,7 +1030,7 @@ a {
   margin-bottom: 10px;
 }
 
-.checkbox .checkbox-label {
+.checkbox-label {
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1184,7 +1185,7 @@ a {
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-info li li:nth-child(3n) {
+.portfolio-info li:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -1286,6 +1287,7 @@ h1 {
 }
 
 .hero h1 {
+  visibility: visible;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: auto;
@@ -1306,123 +1308,6 @@ h1 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* ADVANTAGES */
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px;
-  padding-left: 0px;
-}
-
-.advantages svg {
-  background-color: #f5f4fa;
-  background-image: url(../images/svg/symbol-defs.svg#icon-1);
-  content: "";
-  width: 100%;
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-radius: 4px;
-}
-
-.advantages .list-item {
-  margin-right: 30px;
-  width: calc((100% - 30px * 3) / 4);
-}
-
-.advantages .list-item:last-child {
-  margin-right: 0px;
-}
-
-.advantages .hidden {
-  visibility: hidden;
-  font-size: 0;
-}
-
-.advantages .title {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.advantages .text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* DIRECTIONS */
-.directions {
-  padding-bottom: 94px;
-}
-
-.directions .container {
-  position: relative;
-}
-
-.directions .title {
-  border-radius: 0px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: 0;
-  width: calc((100% - 45px * 2) / 3);
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.directions ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-}
-
-.directions li {
-  width: calc((100% - 30px * 2) / 3);
-  margin-right: 30px;
-}
-
-.directions li:last-child {
-  margin-right: 0px;
 }
 
 /* TEAM */
@@ -1483,7 +1368,7 @@ h1 {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.team .link ul {
+.team ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1612,5 +1497,122 @@ h1 {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+/* DIRECTIONS */
+.directions {
+  padding-bottom: 94px;
+}
+
+.directions .container {
+  position: relative;
+}
+
+.directions .title {
+  border-radius: 0px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  width: calc((100% - 45px * 2) / 3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.directions ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+
+.directions li {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+
+.directions li:last-child {
+  margin-right: 0px;
+}
+
+/* ADVANTAGES */
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.advantages svg {
+  background-color: #f5f4fa;
+  background-image: url(../images/svg/symbol-defs.svg#icon-1);
+  content: "";
+  width: 100%;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 4px;
+}
+
+.advantages .list-item {
+  margin-right: 30px;
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.advantages .list-item:last-child {
+  margin-right: 0px;
+}
+
+.advantages .hidden {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.advantages .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantages .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

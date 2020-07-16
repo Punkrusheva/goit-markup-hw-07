@@ -1,0 +1,42 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/header-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+  h1 {
+    visibility: visible;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $light-color;
+  }
+  .button {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,81 @@
+/* My NORMALIZES */
+html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-bg-color;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+}
+.big-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: $title-font-size;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+  justify-content: space-between;
+  background-color: $accent-color;
+  color: $light-color;
+  width: 196px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  border: 0px;
+  outline: 1px solid $accent-color;
+}

@@ -1,0 +1,41 @@
+/* DIRECTIONS */
+.directions {
+  padding-bottom: 94px;
+
+  .container {
+    position: relative;
+  }
+  .title {
+    border-radius: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: calc((100% - 45px * 2) / 3);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $text-font-size;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $light-color;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  ul {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+  li {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+  }
+  li:last-child {
+    margin-right: 0px;
+  }
+}
