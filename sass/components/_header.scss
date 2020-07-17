@@ -5,30 +5,31 @@
   padding-bottom: 24px;
 }
 /* LOGO */
-.page-header .logo {
-  margin-right: 85px;
-}
+.page-header {
+  .logo {
+    margin-right: 85px;
+  }
 
-.page-header .logo-blue {
-  font-family: $logo-font-family;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
+  .logo-blue {
+    font-family: $logo-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
 
-  letter-spacing: 0.03em;
-  color: $accent-color;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+  }
+  .logo-black {
+    font-family: $logo-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
 }
-.page-header .logo-black {
-  font-family: $logo-font-family;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
 /* NAVIGATION HEADER*/
 .site-nav {
   display: flex;
@@ -82,9 +83,10 @@
   margin: 0px;
   li {
     margin-right: 30px;
-  }
-  li:last-child {
-    margin-right: 0px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
   .e-mail,
   .phone {

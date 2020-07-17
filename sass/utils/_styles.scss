@@ -1,4 +1,3 @@
-/* My NORMALIZES */
 html {
   box-sizing: border-box;
   margin: 0px;
@@ -73,9 +72,10 @@ a {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-}
-.button:hover,
-.button:focus {
-  border: 0px;
-  outline: 1px solid $accent-color;
+
+  &:hover,
+  &:focus {
+    border: 0px;
+    outline: 1px solid $accent-color;
+  }
 }
